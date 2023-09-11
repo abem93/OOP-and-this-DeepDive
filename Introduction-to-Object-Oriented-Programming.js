@@ -77,6 +77,8 @@ console.log(darthVader)
 
 */
 
+//Understanding 'this' in Context
+
 class User {
   age = 20;
   constructor(name,age,location,items){
@@ -109,3 +111,19 @@ const AnotherUser = (name,age,location,items) => {
 const tom = AnotherUser('Thomas', 53, 'Wyoming',['hairbrush']);
 
 console.log(tom)
+
+//Embracing OOP Techniques:
+
+class Playlist{
+  constructor(title, duration) {
+    this.title = title;
+    this.duration = duration;
+  }
+  addVideo(title, duration){
+    this.title = title;
+    this.duration = duration;
+  }
+  totalDuration(){
+    console.log(this.duration)
+  }
+}
