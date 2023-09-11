@@ -20,7 +20,7 @@ console.log(darthVader);
 */
 
 /*
-const createPlayer = (name,hp,mp,items) =>{
+const createPlayer = (name,hp,mp,items) => {
   return{
     name: name,
     hp: hp,
@@ -95,3 +95,17 @@ const john = new User('john', 65, 'Montana',['toothbrush'])
 john.greeting('morning')
 
 console.log(john)
+
+
+const AnotherUser = (name,age,location,items) => {
+  return{
+    name: name,
+    age: age,
+    location: location,
+    items: items,
+  };
+};
+
+const tom = AnotherUser('Thomas', 53, 'Wyoming',['hairbrush']);
+
+console.log(tom)
