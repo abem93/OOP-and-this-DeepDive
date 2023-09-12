@@ -127,3 +127,6 @@ class Playlist{
     console.log(this.duration)
   }
 }
+
+//Construct function named contextDomenstrator
+
